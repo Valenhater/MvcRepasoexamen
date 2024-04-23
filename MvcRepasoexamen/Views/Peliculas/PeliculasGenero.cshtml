@@ -1,0 +1,83 @@
+﻿@model IEnumerable<MvcRepasoexamen.Models.Pelicula>
+
+
+@{
+    ViewData["Title"] = "PeliculasGenero";
+    var generos = ViewData["GENEROS"] as List<Genero>;
+}
+
+<h1>PeliculasGenero</h1>
+
+
+<form method="post">
+    <label>Selecciona un genero</label>
+    <select name="id">
+        @foreach (Genero gen in generos)
+        {
+            <option value="@gen.IdGenero">@gen.Nombre</option>
+        }
+    </select>
+    <button class="btn btn-outline-primary">
+        Probar
+    </button>
+</form>
+
+
+@if(Model != null)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.IdPelicula)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Nombre)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Director)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Imagen)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Sinopsis)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Precio)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.IdGenero)
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IdPelicula)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Nombre)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Director)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Imagen)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Sinopsis)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Precio)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IdGenero)
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

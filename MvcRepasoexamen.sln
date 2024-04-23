@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34607.119
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcRepasoexamen", "MvcRepasoexamen\MvcRepasoexamen.csproj", "{92CA6F94-E4A9-4ECF-B04F-3EBD088E144F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{92CA6F94-E4A9-4ECF-B04F-3EBD088E144F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92CA6F94-E4A9-4ECF-B04F-3EBD088E144F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92CA6F94-E4A9-4ECF-B04F-3EBD088E144F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92CA6F94-E4A9-4ECF-B04F-3EBD088E144F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0F142D24-35FD-48E2-B994-549AFF82384C}
+	EndGlobalSection
+EndGlobal
